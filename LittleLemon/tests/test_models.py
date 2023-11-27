@@ -1,8 +1,8 @@
 from django.test import TestCase
 from rest_framework import status
 
-from littlelemonAPI.models import MenuItem
-from littlelemonAPI.serializers import MenuItemSerializer
+from restaurant.models import MenuItem
+from restaurant.serializers import MenuItemSerializer
 
 # class MenuItemTest(TestCase):
 #     def test_get_item(self):

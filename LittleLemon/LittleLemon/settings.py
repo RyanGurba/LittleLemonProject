@@ -27,7 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATIC_URL = 'restaurant/static/'
 
+STATICFILES_DIRS = [
+    "restaurant/static",
+]
 
 # Application definition
 
@@ -38,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'littlelemonAPI',
+    'restaurant',
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
@@ -85,8 +89,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'MetaCapStone',
-        'USER': 'FILL IN YOUR OWN USERNAME HERE ',
-        'PASSWORD': 'FILL IN UR OWN DB PASSWORD HERE',
+        'USER': 'Please_Change',
+        'PASSWORD': 'Please_Change_',
         'HOST': '127.0.0.1',
         'PORT': '3306',
         'OPTIONS': {
